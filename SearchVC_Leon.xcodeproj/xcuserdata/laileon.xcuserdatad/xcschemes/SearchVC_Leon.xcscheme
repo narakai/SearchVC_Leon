@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FCA15B32B9F898EA815D300B"
+               BuildableName = "SearchVC_Leon.app"
+               BlueprintName = "SearchVC_Leon"
+               ReferencedContainer = "container:SearchVC_Leon.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FCA15B32B9F898EA815D300B"
+            BuildableName = "SearchVC_Leon.app"
+            BlueprintName = "SearchVC_Leon"
+            ReferencedContainer = "container:SearchVC_Leon.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
