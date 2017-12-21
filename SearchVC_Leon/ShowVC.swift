@@ -26,14 +26,16 @@ class ShowVC: UIViewController {
     }
 
     private func setupView() {
+        //在ViewController 里面去定制导航栏左右按钮，以及中间标题
         title = province.name
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(tapClick))
         var str = "省会名称：\(province.name)\n拥有\(province.citys.count)个市\n"
         for city in province.citys {
             str = "\(str)\n市名：\(city.name)\n别名：\(city.alias)\n"
         }
         textView.text = str
 
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.tapClick(_:)))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapClick))
         textView.addGestureRecognizer(tap)
 
         view.addSubview(textView)

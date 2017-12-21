@@ -50,7 +50,10 @@ class SearchResultTVC: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         let show = ShowVC()
         show.province = datas[indexPath.row]
-        present(show, animated: false)
+        //创建一个导航控制器并添加子视图
+        let nav = UINavigationController.init(rootViewController: show)
+        nav.navigationBar.backgroundColor = UIColor.red
+        present(nav, animated: false)
     }
 
     /*
