@@ -32,7 +32,16 @@ class ShowVC: UIViewController {
             str = "\(str)\n市名：\(city.name)\n别名：\(city.alias)\n"
         }
         textView.text = str
+
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.tapClick(_:)))
+        textView.addGestureRecognizer(tap)
+
         view.addSubview(textView)
+    }
+
+    @objc func tapClick(_ sender: Any) {
+        print("按钮被点击")
+        dismiss(animated: false)
     }
 
     override func didReceiveMemoryWarning() {

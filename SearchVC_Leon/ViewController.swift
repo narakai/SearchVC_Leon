@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 
         //search
         searchResultTC = SearchResultTVC(style: .plain)
-        searchResultTC.tableView.delegate = self//将搜索结果的点击和本页点击绑定，点击效果一样
+//        searchResultTC.tableView.delegate = self//将搜索结果的点击和本页点击绑定，点击效果一样
 
         searchController = UISearchController(searchResultsController: searchResultTC)
         //开始搜索时，是否关闭当前VC的控制功能，默认是true，为true，当开始搜索时，是无法控制当前VC的，false时，可以控制
